@@ -1,0 +1,93 @@
+﻿title: Padre_Intro
+color: green
+position: -37,-128
+---
+// intro - jogador aparece na encruzilhada ao iniciar o jogo
+// é uma noite agradável perto de uma cidade pacata, a encruzilhada fica saindo da cidade,
+// em direção a uma área mais humilde, mais mato que casas.
+// O personagem olha ao redor: "Por essa eu não esperava."
+// Ao olhar pra frente: um banco, alguém sentado, cabeça baixa, desânimo visível à distância.
+
+D: Boa noite.
+Padre: Boa noite. Você é...?
+D: Sabe, vendo você de longe dá até vontade de vomitar, que desânimo é esse? Ainda mais para um padre...
+Padre: Por que ainda mais para um padre?
+D: Pelo que sei seu Deus é quem guia para a glória eterna, o que foi? Comeu o pão, tomou o vinho e não gostou?
+Padre: Pare de falar asneiras, veio aqui só para me ridicularizar?
+D: Claro que não, mil perdões, não era minha intenção ofender.
+D: Então padre, o que leva o senhor a estar aqui a essa hora da noite?
+Padre: Estou só matutando, pensando. Saí para caminhar e achei uma boa ideia parar por aqui e ver a vista.
+D: E no que está pensando? O que o levou a vir até aqui?
+Padre: Ah, garoto... A vida...
+Padre: Pensando na minha posição de padre, no impacto que fiz na vida das pessoas.
+Padre: Cheguei à conclusão que falhei. Sou padre há anos... e parece que fiz o mínimo na minha vida toda. Sei que posso mais, só que...
+// D se senta no banco.
+D: Só que o quê?
+Padre: Alguma coisa sempre me incomoda... Mas é difícil por em palavras...
+D: Não pense, só fale. Pessoas sempre têm sua paz perturbada por algo, por que achou que seria diferente com você?
+Padre: Achei que ser padre era uma vida de paz, entende? Mas não é bem assim...
+Padre: Os dias ficaram iguais, o pensamento surge na minha cabeça: "eu não tenho nada, e estou sozinho".
+Padre: Minha mãe nunca apoiou a ideia de eu ser padre, ela queria que eu casasse e desse netos a ela... Nem ela eu tenho mais.
+D: Bom, nunca se está sozinho quando se está com Deus, não é o ditado?
+Padre: É bom... vendo por esse lado... Acho que nem ele eu tenho.
+D: Estou impressionado... Um padre com a maior falta de fé que eu já vi.
+D: Mas para tudo tem uma solução.
+Padre: Essa eu duvido, já tentei de tudo e esse pensamento só aumenta...
+D: Um passo de cada vez, padre... vamos do começo... Sua igreja, é longe daqui?
+Padre: Perto do centro da cidade, junto ao parque. Mas nem faz diferença, aqui, nesse lugar, tem mais gente do que na igreja no último mês...
+D: Já tentou um psicólogo?
+Padre: Já tive umas conversas, tentei falar com outros padres também... Mas tudo me leva a nada...
+Padre: Eu sinto que só não saio do lugar, por mais que tente, as coisas simplesmente não funcionam comigo...
+D: Você comentou que aqui, onde estamos, tem mais gente do que no último mês na sua igreja...
+Padre: Isso... // volta a abaixar a cabeça entre as pernas
+D: Se sente sozinho, por que não adota um animal de estimação?
+Padre: Ora, não seja tolo, não falo desse tipo de companhia, falo de pessoas, de espalhar fé... // se mostra um pouco irritado
+Padre: Por acaso já viu uma igreja que não tem fiéis? Que pode ser fechada porque ninguém vai lá? Isso não existe!!
+Padre: Não quero nem imaginar isso acontecendo.
+D: E o que está fazendo pra melhorar isso, padre? Depois de conversar com psicólogos, outros padres, isso não te levou a nada?
+Padre: Tentei replicar métodos de outros padres, eventos, e nada. Fui de porta em porta e nada. Tentei até com moradores de rua, dizendo que podiam ficar na igreja — eles preferem ficar na rua...
+D: Ó pai, por que me abandonaste!!
+Padre: Não faça piadas com isso, só estou contando como você pediu.
+D: Sem mais piadas por aqui, então, padre.
+D: Essa é a primeira vez que um padre se confessa pra mim. E depois de se confessar, te digo que posso te ajudar.
+Padre: Me ajudar? Mas como? O que você pode fazer que eu já não fiz?
+D: Estou começando a pensar que tenho mais fé que você, padre...
+D: Me diga exatamente o que você quer. Quer sair da vida de padre, já que acha que não dá mais certo? Quer que sua igreja transborde de fiéis? Ou algum outro desejo interno?
+Padre: ...
+Padre: Sinto que falhei como padre, que falhei com minha igreja, e sinceramente não sei ser outra coisa além de padre.
+Padre: Eu queria que minha igreja tivesse fiéis como era antigamente. Eles me escutavam atentos, ouvindo a palavra, com atenção — era lindo de ver, ficavam até o fim do culto. Era isso que eu queria, e não sei como acabou assim...
+D: Os tempos mudam, padre, pessoas mudam... Mas orgulhe-se: mesmo sentindo que falhou, você é devoto, tentou. Não abaixe mais a cabeça, mantenha-a erguida sempre.
+Padre: Obrigado pelas suas palavras, e por me ajudar a encontrar palavras pro que sinto. Realmente queria que as circunstâncias fossem diferentes.
+D: E elas serão, padre. Cheguei aqui, ouvi você, fui seu confessionário, e vou te ajudar na empreitada de reerguer sua igreja. Só uma última coisa: é isso mesmo que você quer? Quer que eu te ajude?
+Padre: Se você realmente mudar minha situação, sim, quero que me ajude... E o que vai me custar? Sou padre, não tenho salário pra pagar por algo assim...
+D: Não vai lhe custar dinheiro nenhum. Vou te ajudar porque também tenho fé, e porque gostei de você, padre...
+Padre: Obrigado, meu jovem. Vou lembrar de você — e se minha igreja voltar aos tempos bons, vou falar de você e da sua atitude nos sermões...
+D: Muito bem. Se é isso que você quer... Assim será.
+<<gesture_pacto>>
+<<silence_ambient 2>>
+-> Conceder por fé genuína — que ele mesmo converta, pela própria palavra
+    <<set $padre_caminho = 1>>
+-> Conceder artificialmente — a igreja lota, sem tocar em nada dentro dele
+    <<set $padre_caminho = 2>>
+D: Tudo pronto... Volte para a igreja, faça suas orações, e daqui a 3 dias será tudo como antigamente.
+Padre: Você tem um senso de humor estranho...
+Padre: E pelo visto você tem mais fé que eu. Estamos só tendo uma conversa sincera, mas você me inspira um pouco a continuar... Espero que esteja certo.
+D: Você verá, padre... Falará, e as pessoas ouvirão. Aconselhará, e as pessoas vão seguir. Seus fiéis mal poderão esperar pelo próximo culto... nem mesmo você vai querer perder um.
+<<jump Padre_TresDias>>
+===
+
+title: Padre_TresDias
+position: -211,111
+---
+// 3 dias depois
+// A encruzilhada está mudada: névoa densa, clima estranho para a época,
+// impressão de vultos ao longe no mato, a árvore parece ter uma corda nela.
+// D agora no banco, sentado de pernas cruzadas, lendo um jornal, vendo o desfecho da escolha.
+<<jump Padre_Fim>>
+===
+
+title: Padre_Fim
+position: 4,301
+---
+<<stop>>
+===
