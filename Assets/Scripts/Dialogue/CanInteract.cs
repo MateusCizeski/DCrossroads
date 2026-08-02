@@ -11,11 +11,11 @@ public class CanInteract : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public LookAtFunction LookAtScript;
     public Text InteractionText;
-    private float InteractDistance = 5f;
+    private float InteractDistance = 2f;
     public bool CanInteraction = true;
 
     public CinemachineCamera PlayerVCam;
-    //public CinemachineCamera TalkZoomVCam;
+    public CinemachineCamera TalkZoomVCam;
     public FirstPersonController FpsController;
 
     void Update()
@@ -44,7 +44,7 @@ public class CanInteract : MonoBehaviour
     public void OnDialogueStarted()
     {
         FpsController.enabled = false;
-        //TalkZoomVCam.enabled = true;
+        TalkZoomVCam.enabled = true;
         PlayerVCam.enabled = false;
         LookAtScript.IKActive = true;
 
@@ -56,10 +56,9 @@ public class CanInteract : MonoBehaviour
     public void OnDialogueEnded()
     {
         FpsController.enabled = true;
-        //TalkZoomVCam.enabled = false;
+        TalkZoomVCam.enabled = false;
         PlayerVCam.enabled = true;
         LookAtScript.IKActive = false;
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         CanInteraction = true;

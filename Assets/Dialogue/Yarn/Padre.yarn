@@ -1,6 +1,5 @@
 ﻿title: Padre_Intro
-color: green
-position: -37,-128
+position: -281,-429
 ---
 // intro - jogador aparece na encruzilhada ao iniciar o jogo
 // é uma noite agradável perto de uma cidade pacata, a encruzilhada fica saindo da cidade,
@@ -31,21 +30,31 @@ Padre: Minha mãe nunca apoiou a ideia de eu ser padre, ela queria que eu casass
 D: Bom, nunca se está sozinho quando se está com Deus, não é o ditado?
 Padre: É bom... vendo por esse lado... Acho que nem ele eu tenho.
 D: Estou impressionado... Um padre com a maior falta de fé que eu já vi.
-D: Mas para tudo tem uma solução.
+
+D: ...
+<<silence_ambient 1>>
+D: Sabe, eu geralmente já teria ido embora rindo dessa altura da conversa.
+Padre: E por que não foi?
+D: Boa pergunta. Ainda não sei a resposta.
+D: Mas para tudo tem uma solução, padre... até pra isso.
 Padre: Essa eu duvido, já tentei de tudo e esse pensamento só aumenta...
 D: Um passo de cada vez, padre... vamos do começo... Sua igreja, é longe daqui?
 Padre: Perto do centro da cidade, junto ao parque. Mas nem faz diferença, aqui, nesse lugar, tem mais gente do que na igreja no último mês...
-D: Já tentou um psicólogo?
-Padre: Já tive umas conversas, tentei falar com outros padres também... Mas tudo me leva a nada...
+
+D: Já tentou psicólogo? Outros padres?
+Padre: Os dois. Psicólogo, outros padres, até fui de porta em porta oferecer a palavra... Tudo me leva a nada.
+// Padre olha pras próprias mãos, vira elas, como quem procura resposta nas linhas da palma.
 Padre: Eu sinto que só não saio do lugar, por mais que tente, as coisas simplesmente não funcionam comigo...
 D: Você comentou que aqui, onde estamos, tem mais gente do que no último mês na sua igreja...
 Padre: Isso... // volta a abaixar a cabeça entre as pernas
-D: Se sente sozinho, por que não adota um animal de estimação?
-Padre: Ora, não seja tolo, não falo desse tipo de companhia, falo de pessoas, de espalhar fé... // se mostra um pouco irritado
-Padre: Por acaso já viu uma igreja que não tem fiéis? Que pode ser fechada porque ninguém vai lá? Isso não existe!!
+
+D: Se sente sozinho, padre... já pensou em procurar companhia de alguém que realmente escuta?
+Padre: Ora, não seja tolo, falo de espalhar fé, não de conversa fiada...
+D: Conversa fiada? Estou aqui há vinte minutos ouvindo você, padre, e nem cobrei dízimo.
+Padre: // ri sem querer, e logo se contém // Por acaso já viu uma igreja que não tem fiéis? Que pode ser fechada porque ninguém vai lá? Isso não existe!!
 Padre: Não quero nem imaginar isso acontecendo.
-D: E o que está fazendo pra melhorar isso, padre? Depois de conversar com psicólogos, outros padres, isso não te levou a nada?
-Padre: Tentei replicar métodos de outros padres, eventos, e nada. Fui de porta em porta e nada. Tentei até com moradores de rua, dizendo que podiam ficar na igreja — eles preferem ficar na rua...
+D: E o que está fazendo pra melhorar isso, padre?
+Padre: Tentei replicar métodos de outros padres, criei eventos, e nada mudou. Já tentei até com os moradores de rua, dizendo que podiam ficar na igreja — eles preferem ficar na rua...
 D: Ó pai, por que me abandonaste!!
 Padre: Não faça piadas com isso, só estou contando como você pediu.
 D: Sem mais piadas por aqui, então, padre.
@@ -60,11 +69,17 @@ D: Os tempos mudam, padre, pessoas mudam... Mas orgulhe-se: mesmo sentindo que f
 Padre: Obrigado pelas suas palavras, e por me ajudar a encontrar palavras pro que sinto. Realmente queria que as circunstâncias fossem diferentes.
 D: E elas serão, padre. Cheguei aqui, ouvi você, fui seu confessionário, e vou te ajudar na empreitada de reerguer sua igreja. Só uma última coisa: é isso mesmo que você quer? Quer que eu te ajude?
 Padre: Se você realmente mudar minha situação, sim, quero que me ajude... E o que vai me custar? Sou padre, não tenho salário pra pagar por algo assim...
-D: Não vai lhe custar dinheiro nenhum. Vou te ajudar porque também tenho fé, e porque gostei de você, padre...
+D: Não vai lhe custar dinheiro nenhum. Vou te ajudar porque também tenho fé, padre... e porque, sei lá, você foi sincero comigo. Isso já é mais raro do que qualquer moeda.
 Padre: Obrigado, meu jovem. Vou lembrar de você — e se minha igreja voltar aos tempos bons, vou falar de você e da sua atitude nos sermões...
+
+D: Antes de qualquer coisa, padre... fé, quando vem de verdade, não costuma vir com freio. E fé forçada também cobra o preço dela, só de outro jeito.
+Padre: Não entendi bem o que quis dizer com isso...
+D: Nem eu, direito. Só... tem certeza que é isso que você quer?
+Padre: Se vai me devolver minha igreja, sim. Quero que me ajude.
+<<shadow_gesture Agreeing>>
 D: Muito bem. Se é isso que você quer... Assim será.
 <<gesture_pacto>>
-<<silence_ambient 2>>
+// <<silence_ambient 2>>
 -> Conceder por fé genuína — que ele mesmo converta, pela própria palavra
     <<set $padre_caminho = 1>>
 -> Conceder artificialmente — a igreja lota, sem tocar em nada dentro dele
@@ -73,12 +88,14 @@ D: Tudo pronto... Volte para a igreja, faça suas orações, e daqui a 3 dias se
 Padre: Você tem um senso de humor estranho...
 Padre: E pelo visto você tem mais fé que eu. Estamos só tendo uma conversa sincera, mas você me inspira um pouco a continuar... Espero que esteja certo.
 D: Você verá, padre... Falará, e as pessoas ouvirão. Aconselhará, e as pessoas vão seguir. Seus fiéis mal poderão esperar pelo próximo culto... nem mesmo você vai querer perder um.
+D: // baixo, quase pra si mesmo // Só espero que "nem mesmo você" não vire literal demais...
 <<jump Padre_TresDias>>
 ===
 
 title: Padre_TresDias
-position: -211,111
+position: -283,-240
 ---
+<<timeskip_3dias>>
 // 3 dias depois
 // A encruzilhada está mudada: névoa densa, clima estranho para a época,
 // impressão de vultos ao longe no mato, a árvore parece ter uma corda nela.
@@ -87,7 +104,66 @@ position: -211,111
 ===
 
 title: Padre_Fim
-position: 4,301
+position: -283,-55
 ---
+// D está sentado no banco, jornal aberto no colo, luz do lampião próximo.
+// A sombra dele se projeta na árvore/parede atrás, quieta por enquanto.
+<<if $padre_caminho == 1>>
+    <<jump Padre_Fim_FeGenuina>>
+<<elseif $padre_caminho == 2>>
+    <<jump Padre_Fim_FeArtificial>>
+<<else>>
+    <<jump Padre_Fim_Generico>>
+<<endif>>
+===
+
+title: Padre_Fim_FeGenuina
+position: -39,164
+---
+// D vira a página do jornal, lendo em voz alta pra si mesmo.
+D: "Padre é encontrado morto após culto que reuniu recorde de fiéis."
+D: Ah, que pena... ele só queria que ouvissem.
+D: E ouviram. Só esqueceram de avisar até onde ir.
+<<shadow_diverge_timed AngryPoint 3>>
+D: "Testemunhas dizem que a multidão exigia uma prova antes de se dispersar."
+D: Fé sem freio é bonita de longe, padre. De perto, ela cobra.
+D: "Igreja permanece fechada até nova ordem."
+D: Bom... pelo menos ele morreu sendo ouvido. Foi exatamente o que ele pediu.
+<<shadow_sync>>
+// D dobra o jornal, guarda no bolso do casaco.
+D: Encruzilhada vazia de novo. Até a próxima confissão.
+
+<<end_demo_fade>>
+<<stop>>
+===
+
+title: Padre_Fim_FeArtificial
+position: -559,162
+---
+// D vira a página do jornal, sorrindo de canto.
+D: "Paróquia do centro registra terceira semana sem nenhum fiel deixar as dependências."
+D: Ele queria a igreja cheia pra sempre...
+D: ...e "pra sempre" não tem intervalo pro almoço.
+<<shadow_diverge_timed LowCrawl 4>>
+D: "Vizinhos relatam odor incomum e cânticos ininterruptos vindos do prédio."
+D: Isso aí é dedicação, padre. Ou falta de escolha. Lá dentro, dá no mesmo.
+D: "Balanço oficial de óbitos ainda não foi divulgado pela diocese."
+D: Sempre tem uma letra pequena no contrato, seu Padre. Você só não perguntou qual era.
+<<shadow_sync>>
+// D dobra o jornal, guarda no bolso do casaco.
+D: Encruzilhada vazia de novo. Até a próxima confissão.
+
+<<end_demo_fade>>
+<<stop>>
+===
+
+title: Padre_Fim_Generico
+position: -288,165
+---
+// Segurança pra caso $padre_caminho não tenha sido definido corretamente —
+// não deve disparar em jogo normal, só evita crash se algo falhar antes.
+D: Hm. Parece que essa história ainda não foi escrita.
+
+<<end_demo_fade>>
 <<stop>>
 ===
